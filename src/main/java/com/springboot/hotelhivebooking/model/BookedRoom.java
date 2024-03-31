@@ -54,7 +54,7 @@ public class BookedRoom {
 
     //we're going to have the room itself whereby we can actually get the ID of the room
     @ManyToOne(fetch = FetchType.LAZY) // one room can be booked by many people or many bookings
-    @JoinColumn(name= "room_Id") // join column because uh this is the column which we're going to join this table with our room,to get the ID of the room that we are booking
+    @JoinColumn(name= "room_id") // join column because uh this is the column which we're going to join this table with our room,to get the ID of the room that we are booking
     private Room room;
 
      //totalNumOfGuest = children + adults

@@ -39,7 +39,7 @@ public class Room {
     @Lob
     private Blob photo;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL) //when this room is deleted all the booking history is going to be deleted
+    @OneToMany(mappedBy ="room", fetch = FetchType.LAZY, cascade = CascadeType.ALL) //when this room is deleted all the booking history is going to be deleted
     private List<BookedRoom> bookings;
 
     //generate a empty constractor
