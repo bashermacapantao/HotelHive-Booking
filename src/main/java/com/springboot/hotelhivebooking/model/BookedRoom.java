@@ -27,29 +27,29 @@ public class BookedRoom {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //how this primary key is going to get generated
     private Long bookingId;
 
-    @Column(name= "check_In") //tell our system jpa how to name hybernate the database
+    @Column(name= "check_in") //tell our system jpa how to name hybernate the database
     private LocalDate checkInDate;
 
-    @Column(name= "check_Out")
+    @Column(name= "check_out")
     private LocalDate checkOutDate;
 
-    @Column(name= "guest_FullName")
+    @Column(name= "guest_full_name")
     private String guestFullName;
 
-    @Column(name= "guest_Email")
+    @Column(name= "guest_email")
     private String guestEmail;
 
-    @Column(name= "number_Children")
+    @Column(name= "children")
     private int numOfChildren;
 
-    @Column(name= "number_Adults")
+    @Column(name= "adults")
     private int numOfAdults;
 
     //totalNumOfGuest = children + adults
-    @Column(name= "total_Guest")
+    @Column(name= "total_guest")
     private int totalNumOfGuest;
 
-    @Column(name= "conformation_Code")
+    @Column(name= "conformation_code")
     private String bookingConfirmationCode;
 
     //we're going to have the room itself whereby we can actually get the ID of the room
